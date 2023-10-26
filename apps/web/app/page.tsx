@@ -1,4 +1,4 @@
-import { commerce } from "../integrations";
+import { commerce } from "../integration";
 import styles from "./page.module.css";
 
 export default async function Page(): Promise<JSX.Element> {
