@@ -10,6 +10,6 @@ export interface GetCart {
   (userId: string): Promise<Cart>;
 }
 
-export interface CommerceAdapter extends Record<string, unknown> {
+export interface CommerceAdapter {
   getCart: GetCart;
 }

@@ -18,9 +18,10 @@ const getCart: GetCart = (_userId: string) => {
   return Promise.resolve(exampleCart);
 };
 
+// Singleton
 export const commerce = {
   getCart,
   init(newConfig: CommercetoolsConfig) {
     config = newConfig
   }
-} satisfies CommerceAdapter;
+} satisfies CommerceAdapter & Record<string, unknown>;
